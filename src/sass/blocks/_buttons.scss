@@ -1,7 +1,7 @@
 .btn {
-	width: 160px;
-  	height: 45px;
-	margin-left: 1.5em;
+	width: 13.333em;
+  	height: 3.750em;
+	margin: 0 0 0 1.5em;
 	border-radius: 8.333em;
 	font-size: 1.2rem;
 	line-height: 3.75;
@@ -19,9 +19,9 @@
 	}
 	&-big {
 		display: block;
-		width: 230px;
-		height: 57px;
-		margin: 2.667em auto 0;
+		width: 15.333em;
+		height: 3.800em;
+		margin: 1.125em auto 0;
 		border: none;
 		font-size: 1.5rem;
 		font-weight: 700;
@@ -29,5 +29,14 @@
 		letter-spacing: normal;
 		text-align: center;
 		color: #ffffff;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.btn {
+		margin: .65em 0 0 0;
+		&-big {
+			margin: 1.125em auto 0;
+		}
 	}
 }
