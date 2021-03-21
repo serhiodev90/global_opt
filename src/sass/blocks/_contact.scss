@@ -1,0 +1,21 @@
+.contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 340px;
+	&__descr {
+		text-align: right;
+		color: #ffffff;
+	}
+
+	&__title {
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+
+	&__tel {
+		font-size: 1.8rem;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+}

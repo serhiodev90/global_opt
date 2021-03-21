@@ -1,6 +1,19 @@
+//==================Шапка=====================
+.logo {
+	width: 96px;
+	height: auto;
+	img {
+		max-width: 100%;
+	}
+}
+
 .header {
 	position: relative;
 	min-height: 680px;
+	padding: 2.3rem 0 8.1rem;
+	font-size: 1.53rem;
+	line-height: 1.5;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -11,6 +24,7 @@
 		background: url('../img/1_header/bg.png') center top/cover no-repeat;
 		filter: blur(10px);
 	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -19,5 +33,163 @@
 		width: 100%;
 		height: 100%;
 		background: rgba($color-txt_one, .7);
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		min-height: 100px;		
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		max-width: 600px;
+	}
+
+	&__link {
+		height: 23px;
+		padding: 0 0.8em;
+		border-right: 1px dotted rgba($color-txt_white, .7);
+		
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+			border-right: none;
+		}
+		a {
+			position: relative;
+			display: inline-block;
+			text-align: center;
+			color: #ffffff;
+			white-space: nowrap;
+			transition: all .3s ease;
+			&:hover {
+				color: $color_main;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -0.2em;
+				width: 100%;
+				height: 0;
+				background: $color_main;
+				transition: all .2s ease;
+			}
+			&:hover::before {
+				height: 1px;
+			}
+		}
+	}
+}
+
+//==================Оффер=====================
+
+.offer {
+	margin-top: 1rem;
+
+	&__suptitle {
+		font-size: 2.4rem;
+		font-weight: 300;
+		line-height: 1;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&__title {
+		margin: 2.6rem 0 0 0;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 7rem;
+		line-height: 1;
+		font-weight: 700;
+		text-align: center;
+		color: #ec644b;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		margin-top: .9rem;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 4.2rem;
+		line-height: 1;
+		text-align: center;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
+	.separator {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 3.8rem auto 0;
+		max-width: 810px;
+		&__item {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: $color-txt_white;
+			&::before, 
+			&::after {
+				content: '';
+				position: absolute;
+				top: .4rem;
+				width: (390px / 810px)*100%;
+				height: 1px;
+				background: $color-txt_white;
+			}
+			&::before {
+				left: 0;
+			}
+			&::after {
+				right: 0;
+			}
+		}
+	}
+
+	&__items {
+		display: flex;
+		align-items: start;
+		margin-top: 3.5rem;
+		font-size: 1.6rem;
+	}
+
+	&__item {
+		min-height: 136px;
+		padding: 0 1.125em;
+		flex: 1;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&__descr {
+		margin-top: 0.75em;
+		font-weight: 300;
+		line-height: 1.38;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&__icon {
+		max-width:62px;
+		height: 52px;
+		margin: 0 auto;
+		img{
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		&:last-child {
+			transform: translate(50%);
+		}
 	}
 }

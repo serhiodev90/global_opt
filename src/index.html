@@ -14,17 +14,19 @@
 				<div class="logo">
 					<img src="icons/logo.svg" alt="Логотип">
 				</div>
-				<ul>
-					<li><a href="#" class="header__link">Преимущества</a></li>
-					<li><a href="#" class="header__link">Наша работа</a></li>
-					<li><a href="#" class="header__link">Цены</a></li>
-					<li><a href="#" class="header__link">Схема работы</a></li>
-					<li><a href="#" class="header__link">Отзывы</a></li>
-					<li><a href="#" class="header__link">Контакты</a></li>
+				<ul class="header__links">
+					<li class="header__link"><a href="#">Преимущества</a></li>
+					<li class="header__link"><a href="#">Наша работа</a></li>
+					<li class="header__link"><a href="#">Цены</a></li>
+					<li class="header__link"><a href="#">Схема работы</a></li>
+					<li class="header__link"><a href="#">Отзывы</a></li>
+					<li class="header__link"><a href="#">Контакты</a></li>
 				</ul>
 				<div class="contact">
-					<p class="contact__info">Есть вопросы?</p>
-					<p class="contact__tel">+7 (926) 423 01 00</p>
+					<div class="contact__descr">
+						<p class="contact__title">Есть вопросы?</p>
+						<p class="contact__tel">+7 (926) 423 01 00</p>
+					</div>
 					<a href="tel:79264230100" class="btn">Перезвоните мне</a>
 				</div>
 			</nav>
@@ -33,37 +35,46 @@
 				<p class="offer__suptitle">Global Opt - логистика полного цикла из Китая в Россию</p>
 				<h1 class="offer__title">ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ</h1>
 				<p class="offer__subtitle">В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА</p>
+
 				<div class="separator">
-					<hr>
-					<hr>
+					<div class="separator__item"></div>
 				</div>
+
 				<div class="offer__items">
 					<div class="offer__item">
-						<img src="icons/1_header/cargo.svg" alt="Грузы" class="header__icon">
+						<div class="offer__icon">
+							<img src="icons/1_header/cargo.svg" alt="Грузы">
+						</div>
 						<p class="offer__descr">
 							Перевозка негабаритных и крупнотоннажных грузов
 						</p>
 					</div>
 					<div class="offer__item">
-						<img src="icons/1_header/customs.svg" alt="Декларация" class="offer__icon">
+						<div class="offer__icon">
+							<img src="icons/1_header/customs.svg" alt="Декларация">
+						</div>
 						<p class="offer__descr">
 							Самостоятельно декларируем и проводим таможенную очистку с оптимизацией кодов и ставок
 						</p>
 					</div>
 					<div class="offer__item">
-						<img src="icons/1_header/deliveries.svg" alt="Поставки" class="offer__icon">
+						<div class="offer__icon">
+							<img src="icons/1_header/deliveries.svg" alt="Поставки">
+						</div>
 						<p class="offer__descr">
 							Осуществляем прямые поставки с заводов от двери до двери
 						</p>
 					</div>
 					<div class="offer__item">
-						<img src="icons/1_header/express.svg" alt="Экспресс" class="offer__icon">
+						<div class="offer__icon">
+							<img src="icons/1_header/express.svg" alt="Экспресс">
+						</div>
 						<p class="offer__descr">
 							Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг  
 						</p>
 					</div>
 				</div>
-				<button class="btn btn--big">Получить расчет</button>
+				<button class="btn btn-big">Получить расчет</button>
 			</section>
 		</div>
 	</header>

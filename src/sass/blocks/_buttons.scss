@@ -1,0 +1,33 @@
+.btn {
+	width: 160px;
+  	height: 45px;
+	margin-left: 1.5em;
+	border-radius: 8.333em;
+	font-size: 1.2rem;
+	line-height: 3.75;
+	text-align: center;
+	background: $color_main;
+	color: #ffffff;
+	text-transform: uppercase;
+	transition: all .3s ease;
+	a {
+		display: inline-block;
+	}
+	&:hover {
+		box-shadow: .5em .5em .5em 0 rgba($color-txt_forms, .3);
+		transform: scale(1.1);
+	}
+	&-big {
+		display: block;
+		width: 230px;
+		height: 57px;
+		margin: 2.667em auto 0;
+		border: none;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 3.8;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+	}
+}
