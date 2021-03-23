@@ -28,3 +28,12 @@
 		flex-direction: column;
 	}
 }
+
+@media only screen and (max-width: 991px) {
+	.contact {
+		order: 2;
+		&__descr {
+			text-align: center;
+		}
+	}
+}
