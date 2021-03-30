@@ -80,3 +80,15 @@ ul li {
 		padding: 0 5rem;
 	}
 }
+
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	html {
+		font-size: 7px;
+	}
+}
