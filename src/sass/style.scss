@@ -55,6 +55,13 @@ ul li {
 	list-style: none;
 }
 
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
 //===============СЕТКА=================
 
 .container {
@@ -64,12 +71,18 @@ ul li {
 	z-index: 2;
 }
 
-@import 'blocks/contact';
-@import 'blocks/buttons';
-@import 'blocks/title';
+//===============Модули=================
+
+@import 'base/contacts';
+@import 'base/buttons';
+@import 'base/titles';
+@import 'base/content';
+
+//===============Блоки=================
 
 @import 'blocks/header';
 @import 'blocks/advantages';
+@import 'blocks/work';
 
 //===============Медиазапросы=================
 

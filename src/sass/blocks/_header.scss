@@ -1,9 +1,6 @@
 //==================Шапка=====================
 .logo {
 	width: 6.275em;
-	img {
-		max-width: 100%;
-	}
 }
 
 .header {
@@ -198,6 +195,29 @@
 }
 
 @media only screen and (max-width: 1199px) {
+	.header {
+		&__link {
+			a {
+				&:hover::before {
+					content: '';
+					display: none;
+				}
+
+				&:active::before {
+					content: '';
+					display: block;
+				}
+			}
+			a:hover {
+				color: $color-txt_white;
+			}
+
+			a:active {
+				color: $color_main;
+			}
+		}
+	}
+
 	.offer {
 		margin-top: 2rem;
 		&__item {

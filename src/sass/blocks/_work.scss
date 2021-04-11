@@ -1,0 +1,40 @@
+.work {
+	min-height: 62rem;
+	padding: 5rem 0 2.6rem;
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 3.6rem;
+	}
+
+	&__item {
+		max-width: 36rem;
+		flex: 1 0 36rem;
+		margin: 0 1.071em 2.143em;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+		img {
+			margin: 0;
+		}
+	}
+
+	&__content {
+		margin-top: 2em;
+	}
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__descr {
+		text-align: justify;
+	}
+}

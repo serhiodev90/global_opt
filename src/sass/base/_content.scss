@@ -1,0 +1,26 @@
+.content {
+	font-size: 1.4rem;
+
+	&__subtitle {
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: $color_main;
+	}
+
+	&__descr {
+		margin-top: 0.714em;
+		font-weight: 300;
+		line-height: 1.6;
+		color: $color-txt_two;
+	}
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 991px) {
+	.content {
+		&__subtitle {
+			font-size: 2rem;
+		}
+	}
+}
