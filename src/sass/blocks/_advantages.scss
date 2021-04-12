@@ -6,13 +6,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: 3.2rem;
-		font-size: 1.4rem;
 	}
 
 	&__item {
 		display: flex;
 		align-items: start;
-		max-width: 50.8rem;
 		flex: 1 0 50.8rem;
 		margin: 0 2.286em 2.714em;
 		&:nth-child(even) {
@@ -46,15 +44,15 @@
 @media only screen and (max-width: 1199px) {
 	.advantages {
 		&__item {
-			max-width: 40%;
+			max-width: 44%;
 		}
 	}
 }
 
 @media only screen and (max-width: 991px) {
 	.advantages {
-		&__items {
-			font-size: 1.8rem;
+		&__icon {
+			width: 40%;
 		}
 	}
 }
@@ -70,10 +68,6 @@
 			&:nth-last-child(2) {
 				margin-bottom: 2.571em;
 			}
-		}
-
-		&__icon {
-			width: 40%;
 		}
 	}
 }

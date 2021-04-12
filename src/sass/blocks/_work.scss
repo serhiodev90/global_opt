@@ -3,13 +3,13 @@
 	padding: 5rem 0 2.6rem;
 	&__items {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		margin-top: 3.6rem;
 	}
 
 	&__item {
 		max-width: 36rem;
-		flex: 1 0 36rem;
 		margin: 0 1.071em 2.143em;
 		&:first-child {
 			margin-left: 0;
@@ -35,6 +35,6 @@
 	}
 
 	&__descr {
-		text-align: justify;
+		text-align: center;
 	}
 }

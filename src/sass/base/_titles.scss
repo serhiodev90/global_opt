@@ -4,6 +4,9 @@
 	text-align: center;
 	color: $color-txt_one;
 	text-transform: uppercase;
+	&-white {
+		color: $color-txt_white;
+	}
 }
 
 hr {
@@ -21,4 +24,7 @@ hr {
 	font-weight: 300;
 	text-align: center;
 	color: $color-txt_one;
+	&-white {
+		color: $color-txt_white;
+	}
 }
