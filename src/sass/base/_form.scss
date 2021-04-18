@@ -1,0 +1,68 @@
+.form {
+	margin-top: 2rem;
+
+	&__title {
+		font-size: 2.8rem;
+		text-align: center;
+		color: $color-txt_two;
+	}
+
+	fieldset {
+		padding: 0 0 3.714em;
+		border: 1px solid rgba(0, 0, 0, 0.21);
+	}
+
+	&__caption {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	&__icon {
+		display: block;
+		max-width: 7.286em;
+		margin: 0 .714em;
+		padding: 1.714em;
+		border: 1px solid $color_main;
+		border-radius: 50%;
+	}
+
+	&__btn {
+		position: absolute;
+		bottom: -138px;
+    	left: -40px;
+		background: $color-txt_white;
+		transition: all .3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		.btn {
+			width: 15em;
+			margin: 0 .929em;
+			border: none;
+			&:hover {
+				transform: scale(1);
+			}
+		}
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		width: 58.571em;
+		margin: 1.286em auto 0;
+	}
+
+	&__item {
+		display: block;
+		width: 19.143em;
+		padding: 0 2em;
+		border: 1px solid rgba(0, 0, 0, 0.21);
+		border-radius: 7.143em;
+		line-height: 3.214em;
+		&:focus {
+			box-shadow: 0 0 .5em .01em rgba($color-txt_forms, .3);
+		}
+	}
+}

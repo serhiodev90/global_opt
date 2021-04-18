@@ -1,0 +1,77 @@
+.price {
+	min-height: 95.2rem;
+	padding: 5.4rem 0 8rem;
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 3.4rem;
+	}
+
+	&__item {
+		max-width: 26rem;
+		margin: 0 1.071em 1.071em;
+		border: 1px solid rgba(0, 0, 0, 0.21);
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__header {
+		height: 3.750em;
+		margin: .125em;
+		font-size: 1.6rem;
+		line-height: 3.750em;
+		font-weight: 700;
+		text-align: center;
+		color: $color-txt_white;
+		background: $color_two;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 29.2rem;
+		padding: 1.143em 1.857em 1.857em;
+
+		.btn {
+			margin: 0 auto;
+		}
+	}
+
+	&__icon {
+		max-width: 4.429em;
+		margin: 0 auto;
+	}
+
+	&__subtitle {
+		font-size: 2.8rem;
+		font-weight: 400;
+		text-align: center;
+
+		span {
+			display: block;
+			font-size: .5em;
+			color: $color-txt_one;
+			text-transform: uppercase;
+		}
+	}
+
+	&__descr {
+		text-align: center;
+	}
+
+	&__form {
+		margin-top: 5.6rem;
+	}
+}
+
+.price .subtitle {
+	max-width: (692px / 1140px)*100%;
+}
