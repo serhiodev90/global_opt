@@ -8,6 +8,8 @@
 	}
 
 	fieldset {
+		max-width: 100%;
+		margin: 0 auto;
 		padding: 0 0 3.714em;
 		border: 1px solid rgba(0, 0, 0, 0.21);
 	}
@@ -28,8 +30,8 @@
 
 	&__btn {
 		position: absolute;
-		bottom: -138px;
-    	left: -40px;
+		bottom: -9.714em;
+    	left: -2.857em;
 		background: $color-txt_white;
 		transition: all .3s ease;
 
@@ -39,7 +41,7 @@
 
 		.btn {
 			width: 15em;
-			margin: 0 .929em;
+			margin: 0 1em;
 			border: none;
 			&:hover {
 				transform: scale(1);
@@ -49,20 +51,79 @@
 
 	&__items {
 		display: flex;
-		justify-content: space-between;
-		width: 58.571em;
+		justify-content: center;
+		max-width: 58.571em;
 		margin: 1.286em auto 0;
 	}
 
 	&__item {
 		display: block;
 		width: 19.143em;
+		margin-right: 0.462em;
 		padding: 0 2em;
 		border: 1px solid rgba(0, 0, 0, 0.21);
 		border-radius: 7.143em;
+		font-size: 1.3rem;
 		line-height: 3.214em;
+
 		&:focus {
 			box-shadow: 0 0 .5em .01em rgba($color-txt_forms, .3);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 767px) {
+	.form {
+
+		fieldset {
+			max-width: 69%;
+		}
+		
+		&__items {
+			flex-direction: column;
+    		align-items: center;
+		}
+
+		&__item {
+			width: 60%;
+			margin: .462em .462em 0;
+			font-size: 1.6rem;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-right: .462em;
+			}
+		}
+
+		&__btn {
+			bottom: -19.388em;
+			left: -4.694em;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.form {
+		fieldset {
+			min-width: 100%;
+		}
+
+		&__item {
+			width: 80%;
+			margin: .462em 0 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 }

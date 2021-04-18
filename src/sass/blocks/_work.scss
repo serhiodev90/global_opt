@@ -1,6 +1,6 @@
 .work {
 	min-height: 62rem;
-	padding: 5rem 0 2.6rem;
+	padding: 5rem 0 5.6rem;
 	&__items {
 		display: flex;
 		justify-content: center;
@@ -10,7 +10,7 @@
 
 	&__item {
 		max-width: 36rem;
-		margin: 0 1.071em 2.143em;
+		margin: 0 1.071em 0;
 		&:first-child {
 			margin-left: 0;
 		}
@@ -36,5 +36,24 @@
 
 	&__descr {
 		text-align: center;
+	}
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 1199px) {
+	.work {
+		&__item {
+			margin: 0 1.071em 2.143em;
+
+			&:first-child {
+				margin-left: 1.071em;
+			}
+
+			&:last-child {
+				margin-right: 1.071em;
+				margin-bottom: 0;
+			}
+		}
 	}
 }

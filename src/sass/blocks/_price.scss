@@ -10,20 +10,30 @@
 	}
 
 	&__item {
-		max-width: 26rem;
-		margin: 0 1.071em 1.071em;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		flex: 1 0 (260px / 1140px)*100%;
+		margin: 0 .929em 1.857em;
+		padding-bottom: 1.857em;
 		border: 1px solid rgba(0, 0, 0, 0.21);
+
 		&:first-child {
 			margin-left: 0;
 		}
+
 		&:last-child {
 			margin-right: 0;
+		}
+
+		.btn {
+			margin: 1.857em auto 0;
 		}
 	}
 
 	&__header {
 		height: 3.750em;
-		margin: .125em;
+		margin: 2px;
 		font-size: 1.6rem;
 		line-height: 3.750em;
 		font-weight: 700;
@@ -33,27 +43,32 @@
 		text-transform: uppercase;
 	}
 
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+
 	&__content {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		min-height: 29.2rem;
-		padding: 1.143em 1.857em 1.857em;
-
-		.btn {
-			margin: 0 auto;
-		}
+		padding: 1.143em 1.857em 0;
 	}
 
 	&__icon {
 		max-width: 4.429em;
+		height: 3.429em;
 		margin: 0 auto;
 	}
 
 	&__subtitle {
+		margin-top: .571em;
 		font-size: 2.8rem;
 		font-weight: 400;
 		text-align: center;
+		white-space: nowrap;
 
 		span {
 			display: block;
@@ -74,4 +89,44 @@
 
 .price .subtitle {
 	max-width: (692px / 1140px)*100%;
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 991px) {
+	.price {
+		&__items {
+			justify-content: center;
+		}
+
+		&__item {
+			flex: none;
+			max-width: 33.3%;
+
+			&:first-child {
+				margin-left: .929em;
+			}
+
+			&:last-child {
+				margin-right: .929em;
+			}
+
+			&:nth-last-child(2),
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.price {
+		&__item {
+			max-width: 100%;
+
+			&:nth-last-child(2) {
+				margin-bottom: 1.857em;
+			}
+		}
+	}
 }
