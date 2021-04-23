@@ -2,6 +2,7 @@
 	min-height: 59rem;
 	padding: 5.8rem 0 5rem;
 	background: #f3f3f3;
+
 	&__items {
 		display: flex;
 		flex-wrap: wrap;
@@ -13,12 +14,14 @@
 		align-items: start;
 		flex: 1 0 50.8rem;
 		margin: 0 2.286em 2.714em;
+
 		&:nth-child(even) {
 			margin-right: 0;
 		}
 		&:nth-child(odd) {
 			margin-left: 0;
 		}
+
 		&:last-child,
 		&:nth-last-child(2) {
 			margin-bottom: 0;
@@ -62,9 +65,11 @@
 		&__items {
 			justify-content: center;
 		}
+
 		&__item {
 			max-width: 90%;
 			margin: 0 0 2.571em;
+			
 			&:nth-last-child(2) {
 				margin-bottom: 2.571em;
 			}

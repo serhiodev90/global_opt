@@ -1,0 +1,87 @@
+.scheme {
+	min-height: 45.4rem;
+	padding: 5rem 4.6rem;
+
+	&__items {
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		flex-wrap: wrap;
+		margin-top: 3rem;
+	}
+
+	&__item {
+		max-width: 24rem;
+		margin: 0 1.429em 2.857em;
+		flex: 1 1 24rem;
+
+		&:first-child,
+		&:nth-last-child(3) {
+			margin-left: 0;
+		}
+		
+		&:last-child,
+		&:nth-child(4) {
+			margin-right: 0;
+		}
+
+		&:nth-last-child(-n+3) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__icon {
+		max-width: 3.571em;
+		height: 3.929em;
+		margin: 0 auto;
+	}
+
+	&__content {
+		margin-top: 1em;
+		text-align: center;
+	}
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 1199px) {
+	.scheme {
+		&__item {
+			max-width: 33.3%;
+
+			&:first-child,
+			&:nth-last-child(3) {
+				margin-left: 1.429em;
+			}
+			
+			&:last-child,
+			&:nth-child(4) {
+				margin-right: 1.429em;
+			}
+
+			&:nth-last-child(-n+3) {
+				margin-bottom: 2.857em;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.scheme {
+		&__item {
+			max-width: 50%;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.scheme {
+		&__item {
+			max-width: 90%;
+		}
+	}
+}
