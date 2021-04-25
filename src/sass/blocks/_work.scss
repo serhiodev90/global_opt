@@ -1,6 +1,9 @@
 .work {
+	position: relative;
 	min-height: 62rem;
 	padding: 5rem 0 5.6rem;
+	z-index: 1;
+
 	&__items {
 		display: flex;
 		justify-content: center;

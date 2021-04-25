@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 @import 'libs/normalize';
+@import 'libs/slick';
 @import 'base/variables';
 
 *,
@@ -78,6 +79,7 @@ img {
 @import 'base/titles';
 @import 'base/content';
 @import 'base/form';
+@import 'base/slids';
 
 //===============Блоки=================
 
@@ -88,6 +90,7 @@ img {
 @import 'blocks/price';
 @import 'blocks/managers';
 @import 'blocks/scheme';
+@import 'blocks/reviews';
 
 //===============Медиазапросы=================
 

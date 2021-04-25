@@ -1,7 +1,9 @@
 .advantages {
+	position: relative;
 	min-height: 59rem;
 	padding: 5.8rem 0 5rem;
 	background: #f3f3f3;
+	z-index: 1;
 
 	&__items {
 		display: flex;

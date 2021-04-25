@@ -1,6 +1,8 @@
 .price {
+	position: relative;
 	min-height: 95.2rem;
 	padding: 5.4rem 0 8rem;
+	z-index: 1;
 
 	&__items {
 		display: flex;

@@ -1,6 +1,9 @@
 .scheme {
+	position: relative;
 	min-height: 45.4rem;
 	padding: 5rem 4.6rem;
+	background: #f3f3f3;
+	z-index: 1;
 
 	&__items {
 		display: flex;
