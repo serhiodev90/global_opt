@@ -1,19 +1,19 @@
 .slids {
-	position: relative;
 	display: flex;
 	justify-content: center;
 	margin-top: 3rem;
 
 	&__item {
+		position: relative;
 		width: 60.2rem;
-		height: 24.2rem;
+		min-height: 24.2rem;
 		margin: 0 1.571em;
 		transform: scale(.7);
 		opacity: .3;
 		transition: all .5s ease;
 	}
 
-	&__icon {
+	&__img {
 		max-width: 8.286em;
 		margin: 0 auto;
 		border: 1px solid transparent;
@@ -35,6 +35,7 @@
 	&__descr {
 		margin-top: 0.857em;
 		font-weight: 300;
+		line-height: 1.6;
 	}
 
 	.slick-current {
@@ -44,26 +45,78 @@
 	}
 
 	.slick-arrow {
+		position: absolute;
+		top: (32px / 242px)*100%;
 		width: 1.5rem;
 		height: 4.7rem;
 		border: none;
 		outline: none;
 		font-size: 0;
+		color: $color-txt_white;
 		cursor: pointer;
+		transition: all .5s ease;
 	}
 
 	.slick-prev {
-		position: absolute;
-		top: 0;
-		left: 0;
+		left: (722px / 1660px)*100%;
 		background: url('../icons/8_reviews/left.svg') no-repeat;
 	}
 
 	.slick-next {
-		position: absolute;
-		top: 0;
-		right: 0;
+		right: (722px / 1660px)*100%;;
 		background: url('../icons/8_reviews/right.svg') no-repeat;
-
 	}
 }
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 1199px) {
+	.slids {
+		&__img {
+			max-width: 55%;
+		}
+
+		.slick-arrow {
+			top: 16%;
+			width: 1.6rem;
+			height: 5rem;
+		}
+
+		.slick-prev {
+			left: 40%;
+		}
+
+		.slick-next {
+			right: 40%;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.slids {
+		&__img {
+			max-width: 35%;
+		}
+
+		&__subtitle {
+			font-size: 2rem;
+		}
+
+		&__descr {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.slids {
+		&__item {
+			opacity: 0;
+		}
+
+		&__img {
+			max-width: 90%;
+		}
+	}
+}
+

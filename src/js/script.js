@@ -15,22 +15,13 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		responsive: [
 			{
-			 breakpoint: 768,
-			 settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 3
-				}
-		  	},
-		  	{
-			 breakpoint: 480,
+			 breakpoint: 992,
 			 settings: {
 				arrows: false,
 				centerMode: true,
 				centerPadding: '40px',
 				slidesToShow: 1
-			 	}
+				}
 		  	}
 		]
 	});
