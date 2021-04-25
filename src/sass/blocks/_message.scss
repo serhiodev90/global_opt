@@ -1,0 +1,69 @@
+.message {
+	position: relative;
+	min-height: 43.8rem;
+	padding: 6.2rem 7.8rem;
+	z-index: 1;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url('../img/9_form/plane.png') center center/cover no-repeat;
+		filter: blur(5px);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color-txt_one, .7);
+	}
+
+	&__form {
+		max-width: 89.6rem;
+		margin: 0 auto;
+		padding-bottom: 6.286em;
+		background: rgba($color-txt_white, .7);
+	}
+
+	&__header {
+		height: 4.857em;
+		padding: 1.286em 0;
+		text-align: center;
+		background: $color_two;
+		color: $color-txt_white;
+	}
+
+	&__title {
+		font-size: 1.9rem;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+	}
+}
+.message .form {
+	position: relative;
+
+	&__btn {
+		bottom: -4.429em;
+		left: 50%;
+		background: none;
+		transform: translateX(-50%);
+		
+	}
+}
+
+.message .btn {
+	&:hover {
+		transform: scale(1.1);
+	}
+}

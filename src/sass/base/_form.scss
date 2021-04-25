@@ -52,13 +52,14 @@
 	&__items {
 		display: flex;
 		justify-content: center;
-		max-width: 58.571em;
+		flex-wrap: wrap;
+		max-width: 62.769em;
 		margin: 1.286em auto 0;
 	}
 
 	&__item {
 		display: block;
-		width: 19.143em;
+		width: 20.615em;
 		margin-right: 0.462em;
 		padding: 0 2em;
 		border: 1px solid rgba(0, 0, 0, 0.21);
@@ -70,8 +71,23 @@
 			box-shadow: 0 0 .5em .01em rgba($color-txt_forms, .3);
 		}
 
-		&:last-child {
+		&:nth-child(3) {
 			margin-right: 0;
+		}
+	}
+
+	&__message {
+		width: 62.769em;
+		height: 5.538em;
+		margin: 0.615em auto 0;
+		padding: 0 2em;
+		border: solid 1px rgba(0, 0, 0, 0.21);
+		border-radius: 0.615em;
+		font-size: 1.3rem;
+		line-height: 3.214em;
+		
+		&:focus {
+			box-shadow: 0 0 .5em .01em rgba($color-txt_forms, .3);
 		}
 	}
 }
