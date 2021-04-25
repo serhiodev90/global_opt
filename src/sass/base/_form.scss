@@ -52,8 +52,7 @@
 	&__items {
 		display: flex;
 		justify-content: center;
-		flex-wrap: wrap;
-		max-width: 62.769em;
+		max-width: 100%;
 		margin: 1.286em auto 0;
 	}
 
@@ -77,17 +76,24 @@
 	}
 
 	&__message {
-		width: 62.769em;
+		width: 100%;
 		height: 5.538em;
 		margin: 0.615em auto 0;
-		padding: 0 2em;
-		border: solid 1px rgba(0, 0, 0, 0.21);
-		border-radius: 0.615em;
 		font-size: 1.3rem;
-		line-height: 3.214em;
-		
-		&:focus {
-			box-shadow: 0 0 .5em .01em rgba($color-txt_forms, .3);
+
+		textarea {
+			display: block;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 0 2em;
+			border: solid 1px rgba(0, 0, 0, 0.21);
+			border-radius: 0.615em;
+			line-height: 3.214em;
+
+			&:focus {
+				box-shadow: 0 0 .5em .01em rgba($color-txt_forms, .3);
+			}
 		}
 	}
 }
@@ -107,16 +113,21 @@
 		}
 
 		&__item {
-			width: 60%;
-			margin: .462em .462em 0;
+			width: 80%;
+			margin: .462em 0 0;
 			font-size: 1.6rem;
 
 			&:first-child {
 				margin-top: 0;
 			}
+		}
 
-			&:last-child {
-				margin-right: .462em;
+		&__message {
+			height: 7.538em;
+			font-size: 1.6rem;
+
+			textarea {
+				width: 80%;
 			}
 		}
 
@@ -130,15 +141,20 @@
 @media only screen and (max-width: 575px) {
 	.form {
 		fieldset {
-			min-width: 100%;
+			max-width: 100%;
 		}
 
 		&__item {
-			width: 80%;
 			margin: .462em 0 0;
 
 			&:last-child {
 				margin-right: 0;
+			}
+		}
+
+		&__message {
+			textarea {
+				width: 100%;
 			}
 		}
 	}

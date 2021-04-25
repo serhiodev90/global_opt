@@ -1,7 +1,7 @@
 .message {
 	position: relative;
 	min-height: 43.8rem;
-	padding: 6.2rem 7.8rem;
+	padding: 6.2rem 0;
 	z-index: 1;
 	overflow: hidden;
 
@@ -52,18 +52,36 @@
 }
 .message .form {
 	position: relative;
+	padding: 0 3em;
 
 	&__btn {
 		bottom: -4.429em;
 		left: 50%;
 		background: none;
 		transform: translateX(-50%);
-		
 	}
 }
 
 .message .btn {
 	&:hover {
 		transform: scale(1.1);
+	}
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 767px) {
+	.message .form {
+		&__btn {
+			bottom: -4.898em;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.message .form {
+		&__item {
+			width: 100%;
+		}
 	}
 }
