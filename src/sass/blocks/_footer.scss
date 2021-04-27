@@ -1,31 +1,75 @@
 .footer {
+	position: relative;
+	min-height: 20rem;
+	padding: 2.4rem 0 2.8rem;
+	background: $color_two;
+	z-index: 1;
 
 	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 1.857em;
 	}
 
 	&__descr {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 32.5em;
+		font-size: 1.6rem;
 	}
 
 	&__title {
+		margin-left: 2.625em;
+		font-size: 1.6rem;
+		font-weight: 700;
+		text-align: left;
+		color: $color-txt_white;
 	}
 
 	&__separator {
+		position: absolute;
+		top: 6.857em;
+		left: -1.071em;
+		width: 117.2rem;
+		margin: 0;
+		background: rgba($color-txt_white, .3);
 	}
 
 	&__bottom {
-	}
-
-	&__copy {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 1.357em;
+		font-size: 1.3rem;
+		color: rgba($color-txt_white, .6);
 	}
 
 	&__privacy {
+		transition: all .3s ease;
+		cursor: pointer;
+
+		&:hover {
+			color: $color_main;
+			text-decoration: underline;
+		}
 	}
 
 	&__author {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 10.923em;
+		font-size: 1.3rem;
 	}
 
 	&__logo {
+		max-width: 2.308em;
+		margin-left: 0.769em;
 	}
 }
-.logo {
+
+.footer .logo {
+	max-width: 4.250em;
 }
