@@ -92,6 +92,10 @@
 
 @media only screen and (max-width: 991px) {
 	.footer {
+		&__separator {
+			width: 90%;
+		}
+
 		&__bottom {
 			flex-wrap: wrap;
 		}
