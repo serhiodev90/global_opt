@@ -30,23 +30,29 @@
 
 	&__separator {
 		position: absolute;
-		top: 6.857em;
-		left: -1.071em;
-		width: 117.2rem;
+		top: (98px / 150px)*100%;
+		left: 50%;
+		width: (1172px / 1140px)*100%;
 		margin: 0;
 		background: rgba($color-txt_white, .3);
+		transform: translateX(-50%);
 	}
 
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-top: 1.357em;
+		margin-top: 1.357em;
 		font-size: 1.3rem;
 		color: rgba($color-txt_white, .6);
 	}
 
+	&__copy {
+		margin-right: 16.923em;
+	}
+
 	&__privacy {
+		margin-right: 34.923em;
 		transition: all .3s ease;
 		cursor: pointer;
 
@@ -72,4 +78,72 @@
 
 .footer .logo {
 	max-width: 4.250em;
+}
+
+//===============Медиазапросы=================
+
+@media only screen and (max-width: 1199px) {
+	.footer {
+		&__separator {
+			width: 95%;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.footer {
+		&__bottom {
+			flex-wrap: wrap;
+		}
+
+		&__copy {
+			margin: 0;
+		}
+
+		&__privacy {
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.footer {
+		&__top {
+			justify-content: center;
+		}
+
+		&__descr {
+			flex-direction: column;
+		}
+
+		&__title {
+			margin: 0;
+			text-align: center;
+		}
+
+		&__separator {
+			top: 60%;
+			width: 80%;
+		}
+
+		&__bottom {
+			justify-content: center;
+		}
+
+		&__copy {
+			margin: 1.099em 1.099em 0;
+		}
+
+		&__privacy {
+			margin: 1.099em 1.099em 0;
+		}
+
+		&__author {
+			margin: 1.099em 1.099em 0;
+		}
+	}
+
+	.footer .logo {
+		margin-bottom: 0.536em;
+	}
 }

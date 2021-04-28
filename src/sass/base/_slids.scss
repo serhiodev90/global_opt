@@ -55,6 +55,7 @@
 		color: $color-txt_white;
 		cursor: pointer;
 		transition: all .5s ease;
+		z-index: 1;
 	}
 
 	.slick-prev {
